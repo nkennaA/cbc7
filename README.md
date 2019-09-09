@@ -1,4 +1,4 @@
-####### **Nkenna Aniedobe Code Bootcamp 7**
+###### **Nkenna Aniedobe Code Bootcamp 7**
 
 ## **Things I like**
 
@@ -18,10 +18,9 @@ Format: ![Alt Text](url)
 ~The girl from vine
 
 ## **How print hello world in python**
-
-'''
+```
 x = "hello world"
 print(x)
-'''
+```
 
 That is all
