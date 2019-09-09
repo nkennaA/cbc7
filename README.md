@@ -9,7 +9,6 @@
 ## **Favorite Meme**
 
 ![Silence Boomer](/images/silenceboomer.jpg)
-Format: ![Alt Text](url)
 
 ## **Favorite Quote**
 
