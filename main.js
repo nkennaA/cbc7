@@ -108,15 +108,15 @@ function randomNumberCheck(number)
     document.getElementById("myNumber").value = "";
     var randNum = Math.floor(Math.random() *9)+1;
     if(number < 1 || number > 10) {
-        console.log( "Enter a number between 1 and 10!");
-        return;
+        console.log("Enter a number between 1 and 10!");
+        return "Enter a number between 1 and 10!";
     }
     if(number == randNum) {
-        console.log( "Congratulions, you guessed my number");
-        return;
+        console.log("Congratulions, you guessed my number");
+        return "Congratulations, you guessed my mnumber";
     }
     console.log("Sorry, my number was " + randNum);
-    return;
+    return "Sorry, my number was " + randNum;
 }
 
 document.addEventListener("keyup", function(e) {
@@ -124,6 +124,6 @@ document.addEventListener("keyup", function(e) {
         var num = document.getElementById("myNumber").value;
         console.log(num);
         console.log("entered");
-        randomNumberCheck(num);
+        document.getElementById("answer").innerHTML = randomNumberCheck(num);
     }
 });
