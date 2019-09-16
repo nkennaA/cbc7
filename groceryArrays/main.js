@@ -1,5 +1,6 @@
 var inventory = {};
-function fillArray() {
+let convert = {};
+convert.fillArray = function() {
     inventory["water"] = 100,
     inventory["soda"] = 100,
     inventory["detergent"] = 50,
@@ -11,8 +12,8 @@ function fillArray() {
     inventory["milk"] = 50,
     inventory["chicken"] = 50;
 };
-fillArray();
-function addToInventory(itmesArray, numbersArray) {
+convert.fillArray();
+convert.addToInventory = function(itmesArray, numbersArray) {
     //put the list of items you want to increase their inventory in an array, 
     //and the number of items you wish to add in the same order
     if (itmesArray.length != numbersArray.length) {
@@ -33,7 +34,7 @@ function addToInventory(itmesArray, numbersArray) {
     return inventory;
 }
 
-function subtractFromInventory(itmesArray, numbersArray) {
+convert.subtractFromInventory = function(itmesArray, numbersArray) {
     //put the list of items you want to increase their inventory in an array, 
     //and the number of items you wish to add in the same order
     if (itmesArray.length != numbersArray.length) {
@@ -67,3 +68,4 @@ function alertOutOfStock() {
     }
 }
 
+module.exports = convert;
